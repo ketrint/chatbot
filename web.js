@@ -30,7 +30,7 @@ app.post('/webhook', (req, res) => {
     req.body.entry.forEach((entry) => {
       entry.messaging.forEach((event) => {
         if (event.message && event.message.text) {
-          sendMessage(event);
+          getWatson(event);
         }
       });
     });
@@ -39,7 +39,7 @@ app.post('/webhook', (req, res) => {
 });
   
   
- function getWatson(event){
+function getWatson(event){
   var number = event.sender.id;
   var message = event.message.text;
   
@@ -54,7 +54,7 @@ app.post('/webhook', (req, res) => {
       contextIndex = index;
     }
     index = index + 1;
- });
+  });
  
  
  console.log('Recieved message from ' + number + ' saying \'' + message  + '\'');
