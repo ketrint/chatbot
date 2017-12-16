@@ -96,8 +96,8 @@ function getWatson(event){
            qs: {access_token: PAGE_ACCESS_TOKEN},
            method: 'POST',
            json: {
-            recipient: {id: sender},
-            message: {text: text}
+            recipient: {id: number},
+            message: {text: response.output.text[0]}
            }
          }, function (error, response) {
            if (error) {
