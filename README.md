@@ -21,7 +21,7 @@ Once an App is created:
   
 2.   Find **Token Generation**
    - Select your page from dropdown menu **Page**
-   - You will see a just generated **Token**, that will be used later in the node.js file
+   - You will see a just generated **Token**, that will be used later in the web.js file
    
    
 Local tunnel creating
@@ -54,7 +54,7 @@ $ npm install express body-parser --save
    - Choose Messanger Setting
    - At the Webhooks click **Setup Webhooks** 
    - Fill out the **Callback URL** with your link, adding "/webhook" 
-   - Add a token that is written in your Node.js 
+   - Add a token that is written in your web.js 
 
 
 Connecting to IBM Watson 
@@ -67,7 +67,7 @@ Connecting to IBM Watson
 5. Add your workspaceID, username and pass to your code
 
 
-Launch node.js 
+Launch web.js 
 
 
 
