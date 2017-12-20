@@ -24,6 +24,8 @@ Once an App is created:
    - You will see a just generated **Token**, that will be used later in the web.js file
    
    
+   
+   
 Local tunnel creating
 ---------------------
 
@@ -56,6 +58,8 @@ $ npm install express body-parser --save
    - At the Webhooks click **Setup Webhooks** 
    - Fill out the **Callback URL** with your link, adding "/webhook" 
    - Add a token that is written in your web.js 
+
+
 
 
 Connecting to IBM Watson 
