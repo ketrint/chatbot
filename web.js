@@ -60,8 +60,8 @@ function getWatson(event){
  console.log('Recieved message from ' + number + ' saying \'' + message  + '\'');
 
   var conversation = new ConversationV1({
-    username: '',
-    password: '',
+    username: '#Enter ur Username from Watson Conversation Credentials',
+    password: '#Enter ur password from Watson Conversation Credentials',
     version_date: ''
   });
 
@@ -70,7 +70,7 @@ function getWatson(event){
 
   conversation.message({
     input: { text: message },
-    workspace_id: '',
+    workspace_id: '#Enter ur WorkspaceID from Watson Conversation Credentials',
     context: context
    }, function(err, response) {
        if (err) {
